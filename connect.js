@@ -1,10 +1,10 @@
 var awsIot = require('aws-iot-device-sdk');
 
 var device = awsIot.device({
-	keyPath: 'cabinetIoT.private.key',
-	certPath: 'cabinetIoT.cert.pem',
-	caPath: 'root-CA.crt',
-	clientId: 'raspi',
+	keyPath: 'cert/cabinetIoT.private.key',
+	certPath: 'cert/cabinetIoT.cert.pem',
+	caPath: 'cert/root-CA.crt',
+	clientId: 'raspi-connect',
 	region: 'us-east-1'
 });
 
